@@ -21,12 +21,13 @@ export default function Header() {
 
             {!isMobileView && (
               <nav>
-                <a href="#home">Home</a>
-                <Link to="/blinds">Blinds</Link>
+                <Link to="/">Home</Link>
+
                 <Link to="/services">Services</Link>
+                <Link to="/blinds">Blinds</Link>
                 <Link to="/gallery">Gallery</Link>
 
-                <a href="#contact">Contact Us </a>
+                <Link to="/contact">Contact Us </Link>
               </nav>
             )}
 

@@ -30,7 +30,7 @@ export default function Footer() {
             <nav>
               <ul>
                 <li>
-                  <a href="#home">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
 
                 <li>
@@ -43,6 +43,10 @@ export default function Footer() {
 
                 <li>
                   <Link to="/blinds">Blinds</Link>
+                </li>
+
+                <li>
+                  <Link to="/contact">Contact us</Link>
                 </li>
               </ul>
             </nav>

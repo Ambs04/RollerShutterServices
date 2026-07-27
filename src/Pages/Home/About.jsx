@@ -1,10 +1,12 @@
+import about from "../../assets/about.jpeg";
+
 export default function About() {
   return (
     <>
       <div>
         <div>
           <div>
-            <img />
+            <img src={about} />
           </div>
           <div>
             <p>WHO ARE WE?</p>

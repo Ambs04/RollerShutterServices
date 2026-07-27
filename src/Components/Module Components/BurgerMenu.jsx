@@ -14,14 +14,8 @@ export default function BurgerMenu({ setMenuActive }) {
 
           <div>
             <div>
-              <a href="#home" onClick={() => setMenuActive(false)}>
+              <Link to="/" onClick={() => setMenuActive(false)}>
                 Home
-              </a>
-            </div>
-
-            <div>
-              <Link to="/blinds" onClick={() => setMenuActive(false)}>
-                Blinds
               </Link>
             </div>
 
@@ -32,15 +26,21 @@ export default function BurgerMenu({ setMenuActive }) {
             </div>
 
             <div>
+              <Link to="/blinds" onClick={() => setMenuActive(false)}>
+                Blinds
+              </Link>
+            </div>
+
+            <div>
               <Link to="/gallery" onClick={() => setMenuActive(false)}>
                 Gallery
               </Link>
             </div>
 
             <div>
-              <a href="#contact" onClick={() => setMenuActive(false)}>
+              <Link to="/contact" onClick={() => setMenuActive(false)}>
                 Contact us
-              </a>
+              </Link>
             </div>
           </div>
         </div>

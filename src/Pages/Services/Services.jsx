@@ -4,6 +4,8 @@ import manufactureDoors from "../../assets/manufacture_doors.png";
 import shutterRepairs from "../../assets/shutter_repairs.png";
 import stripCurtains from "../../assets/strip_curtains.png";
 import windowShutters from "../../assets/window_shutters.png";
+import Header from "../../Components/Common Components/Header";
+import Footer from "../../Components/Common Components/Footer";
 
 export default function Services() {
   const service = [
@@ -46,6 +48,7 @@ export default function Services() {
 
   return (
     <>
+      <Header />
       <div>
         <div>
           <h1>Our Services</h1>
@@ -73,6 +76,7 @@ export default function Services() {
           <button>VIEW OUR BLINDS RANGE</button>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
