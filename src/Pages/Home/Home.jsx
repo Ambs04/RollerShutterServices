@@ -4,6 +4,7 @@ import About from "./About";
 import Process from "./Process";
 
 import Footer from "../../Components/Common Components/Footer";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -12,7 +13,11 @@ export default function Home() {
       <Hero />
       <About />
       <Process />
-
+      <div>
+        <p>
+          Ready To Get <i>Rolling</i> ? <Link to="/contact">CONTACT US</Link>
+        </p>
+      </div>
       <Footer />
     </>
   );

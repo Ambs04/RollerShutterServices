@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Header from "../../Components/Common Components/Header";
+import Footer from "../../Components/Common Components/Footer";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -102,6 +104,7 @@ export default function Contact() {
 
   return (
     <div id="contact">
+      <Header />
       <div>
         <div>
           <h3>GET IN TOUCH</h3>
@@ -326,6 +329,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

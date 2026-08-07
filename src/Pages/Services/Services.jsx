@@ -6,6 +6,7 @@ import stripCurtains from "../../assets/strip_curtains.png";
 import windowShutters from "../../assets/window_shutters.png";
 import Header from "../../Components/Common Components/Header";
 import Footer from "../../Components/Common Components/Footer";
+import { Link } from "react-router-dom";
 
 export default function Services() {
   const service = [
@@ -73,7 +74,9 @@ export default function Services() {
           </div>
         </div>
         <div>
-          <button>VIEW OUR BLINDS RANGE</button>
+          <Link to="/blinds">
+            <button>VIEW OUR BLINDS RANGE</button>
+          </Link>
         </div>
       </div>
       <Footer />
