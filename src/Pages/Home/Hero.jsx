@@ -2,11 +2,11 @@ import hero from "../../assets/hero.png";
 
 export default function Hero() {
   return (
-    <section class=" overflow-hidden">
-      <img src={hero} class="absolute inset-0 w-full h-3/4 object-cover" />
-      <div class="absolute h-3/4 inset-0 bg-black/60">
+    <div class=" min-h-screen relative overflow-hidden shadow-2xl ">
+      <img src={hero} class="absolute inset-0 w-full  h-full object-cover" />
+      <div class="absolute h-full inset-0 bg-black/60">
         <div />
-        <div class="relative top-20 z-10 max-w-7xl mx-auto px-6 sm:px-4 lg:px-8 py-40 min-h-screen flex flex-col items-center ">
+        <div class="relative top-10 z-10 max-w-7xl mx-auto px-6 sm:px-4 lg:px-8 py-40 min-h-screen flex flex-col items-center justify-center ">
           <h2 class="text-4xl font-semibold tracking-wider text-[#e0e1e6] sm:text-6xl text-center">
             Welcome To <span class="text-[#e0e1e6]">R</span>
             <span class="text-[#e0e1e6]">SS</span>
@@ -21,6 +21,6 @@ export default function Hero() {
           </i>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

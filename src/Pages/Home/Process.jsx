@@ -1,78 +1,65 @@
 export default function Process() {
   const steps = [
-    "Get in Touch",
-    "Evaluation",
-    "Free Quotation",
-    "Installation",
-    "Aftercare Servicing",
-  ];
-
-  const colors = [
     {
-      bg: "bg-red-600",
-      arrow: "#dc2626",
+      number: "01",
+      title: "Get in Touch",
     },
     {
-      bg: "bg-yellow-500",
-      arrow: "#eab308",
+      number: "02",
+      title: "Evaluation",
+    },
+    {
+      number: "03",
+      title: "Free Quotation",
+    },
+    {
+      number: "04",
+      title: "Installation",
+    },
+    {
+      number: "05",
+      title: "Servicing",
     },
   ];
 
   return (
-    <>
-      <div>
-        <div>
-          <h2>Our Process</h2>
-          <p>
+    <div class="bg-[#242424] py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+        <div class-="max-w-5xl ">
+          <h2 class="text-[#e0e1e6] text-xl font-semibold mb-5">Our Process</h2>
+          <p class="text-[#e0e1e6]/80 text-sm sm:text-lg font-normal tracking-wide">
             From your first enquiry to ongoing support, we make every step
             straightforward and hassle-free. Our experienced team works closely
             with you to deliver a solution that meets your needs with quality,
             reliability, and professional service.
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row">
-          {steps.map((step, index) => {
-            const color = colors[index % colors.length];
+        <div className="relative mt-20">
+          {/* Connecting line */}
+          <div className="absolute left-0 right-0 top-8 hidden h-1 bg-[#A68626] lg:block" />
 
-            return (
+          <div className="grid gap-12 lg:grid-cols-5">
+            {steps.map((step) => (
               <div
-                key={index}
-                className={`relative ${color.bg} text-white font-semibold px-10 py-5 min-w-[220px] flex items-center justify-center`}
-                style={{
-                  clipPath:
-                    "polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 10% 50%)",
-                }}
+                key={step.number}
+                className="relative flex flex-col items-center text-center"
               >
-                {step}
+                {/* Circle */}
+                <div className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full bg-[#F22233] border-4 border-[#242424] text-xl font-bold text-white shadow-lg">
+                  {step.number}
+                </div>
 
-                {/* Right chevron */}
-                {index !== steps.length - 1 && (
-                  <div
-                    className="absolute -right-6 top-0 z-10 w-0 h-0"
-                    style={{
-                      borderTop: "30px solid transparent",
-                      borderBottom: "30px solid transparent",
-                      borderLeft: `24px solid ${color.arrow}`,
-                    }}
-                  />
-                )}
-
-                {/* Cut-out on the left */}
-                {index !== 0 && (
-                  <div
-                    className="absolute left-0 top-0 w-0 h-0"
-                    style={{
-                      borderTop: "30px solid transparent",
-                      borderBottom: "30px solid transparent",
-                      borderLeft: "24px solid white",
-                    }}
-                  />
-                )}
+                {/* Card */}
+                <div className="mt-6 w-full rounded-xl bg-[#303030] p-6 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                  <h3 className="text-lg font-semibold text-white">
+                    {step.title}
+                  </h3>
+                </div>
               </div>
-            );
-          })}
+            ))}
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
