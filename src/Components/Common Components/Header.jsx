@@ -13,7 +13,11 @@ export default function Header() {
 
   return (
     <header>
-      <div class="fixed z-50 top-0 right-0 left-0 py-5 bg-[#0d0d0d] ">
+      <div
+        class="fixed z-50 top-0 right-0 left-0 py-5  bg-[#0D0D0D]/90
+backdrop-blur-md
+border-b border-white/5"
+      >
         <div class=" mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {!(isMobileView && menuActive) && (
             <div class="flex flex-row items-center justify-between">

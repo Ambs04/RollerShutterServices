@@ -6,108 +6,160 @@ export default function Footer() {
   const currentDate = new Date().getFullYear();
 
   return (
-    <footer class="bg-[#272727]">
-      <div class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto py-12">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-10 gap-7">
-          {/* Logo & Description */}
-          <div class="flex flex-col items-start mb-4 gap-2">
-            <img
-              src={logo}
-              alt="Roller Shutter Services Logo"
-              class="w-auto h-12 object-contain "
-            />
+    <footer className="bg-[#0D0D0D] text-[#E0E1E6]">
+      <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+        {/* Main Footer */}
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-[1.5fr_0.75fr_1fr]">
+          {/* Brand */}
+          <div className="max-w-md">
+            <Link to="/" className="inline-block">
+              <img
+                src={logo}
+                alt="Roller Shutter Services Logo"
+                className="h-16 w-auto object-contain"
+              />
+            </Link>
 
-            <p class="max-w-xs leading-relaxed text-sm md:text-lg text-[#e0e1e6]/60 font-medium mb-3">
-              With over 20 years of industry experience, RSS is a family-owned
-              business committed to delivering high-quality roller shutter
-              solutions for residential, commercial, and industrial properties.
-              We combine expert craftsmanship, reliable service, and durable
-              products with a strong focus on customer satisfaction, providing
-              professional installation, maintenance, and repairs you can depend
-              on.
+            <p className="mt-6 max-w-md text-sm leading-7 text-[#E0E1E6]/60">
+              A family-owned business providing professional roller shutter
+              solutions throughout Cape Town. From manufacturing and
+              installation to repairs and servicing, we deliver reliable
+              solutions built to last.
             </p>
+
+            {/* Small brand accent */}
+            <div className="mt-7 flex items-center gap-3">
+              <span className="h-[2px] w-10 bg-[#F22233]" />
+              <span className="text-sm font-medium italic text-[#F2B90F]">
+                We keep you rolling.
+              </span>
+            </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 class="tracking-widest text-lg  mb-4 text-[#e0e1e6]/80 font-semibold">
-              Quick Links
+            <h3 className="mb-6 text-sm font-semibold uppercase tracking-[0.2em] text-white">
+              Explore
             </h3>
 
-            <nav class="text-[#e0e1e6]/80 text-sm sm:text-lg font-medium tracking-wide ">
-              <ul class="space-y-3">
+            <nav>
+              <ul className="space-y-4 text-sm text-[#E0E1E6]/60">
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link
+                    to="/"
+                    className="transition-colors hover:text-[#F2B90F]"
+                  >
+                    Home
+                  </Link>
                 </li>
 
                 <li>
-                  <Link to="/services">Services</Link>
+                  <Link
+                    to="/services"
+                    className="transition-colors hover:text-[#F2B90F]"
+                  >
+                    Services
+                  </Link>
                 </li>
 
                 <li>
-                  <Link to="/gallery">Gallery</Link>
+                  <Link
+                    to="/gallery"
+                    className="transition-colors hover:text-[#F2B90F]"
+                  >
+                    Gallery
+                  </Link>
                 </li>
 
                 <li>
-                  <Link to="/blinds">Blinds</Link>
+                  <Link
+                    to="/blinds"
+                    className="transition-colors hover:text-[#F2B90F]"
+                  >
+                    Blinds
+                  </Link>
                 </li>
 
                 <li>
-                  <Link to="/contact">Contact us</Link>
+                  <Link
+                    to="/contact"
+                    className="transition-colors hover:text-[#F22233]"
+                  >
+                    Contact Us
+                  </Link>
                 </li>
               </ul>
             </nav>
           </div>
 
-          {/* Contact Information */}
+          {/* Contact */}
           <div>
-            <h3 class="tracking-widest text-lg  mb-4 text-[#e0e1e6]/80 font-semibold">
-              Contact
+            <h3 className="mb-6 text-sm font-semibold uppercase tracking-[0.2em] text-white">
+              Get In Touch
             </h3>
-            <div class="text-[#e0e1e6]/80 text-sm sm:text-lg font-medium tracking-wide ">
-              <div class="mb-4">
-                <p class="pb-2">
-                  <strong>Phone:</strong>
+
+            <div className="space-y-6 text-sm">
+              {/* Phone */}
+              <div>
+                <p className="mb-1 text-xs uppercase tracking-widest text-[#F2B90F]">
+                  Phone
                 </p>
-                <a href="tel:+278813320">
-                  <p>(+27) 71 881 3320</p>
-                </a>
-              </div>
-              <div class="mb-4">
-                <p class="pb-2">
-                  <strong>Address:</strong>
-                </p>
+
                 <a
-                  href="https://www.google.com/maps/place/19+Stella+Cove,+Montague+Gardens,+Cape+Town,+7441/@-33.85097,18.5193603,17z/data=!3m1!4b1!4m5!3m4!1s0x1dcc5ecc613fcc49:0x28242d00d701dbb9!8m2!3d-33.85097!4d18.5193603?entry=ttu&g_ep=EgoyMDI2MDgwNS4xIKXMDSoASAFQAw%3D%3D"
-                  target="_blank"
+                  href="tel:+27718813320"
+                  className="text-[#E0E1E6]/70 transition-colors hover:text-white"
                 >
-                  <p>19 Stella Cove, Montague Gardens</p>
+                  (+27) 71 881 3320
                 </a>
-                <p>Cape Town, South Africa</p>
               </div>
-              <div class="mb-4">
-                <p class="pb-2">
-                  <strong>Trading Hours:</strong>
+
+              {/* Address */}
+              <div>
+                <p className="mb-1 text-xs uppercase tracking-widest text-[#F2B90F]">
+                  Visit Us
                 </p>
-                <p>Monday – Sunday</p>
-                <p>24 Hours</p>
+
+                <a
+                  href="https://www.google.com/maps/place/19+Stella+Cove,+Montague+Gardens,+Cape+Town,+7441"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="leading-6 text-[#E0E1E6]/70 transition-colors hover:text-white"
+                >
+                  19 Stella Cove
+                  <br />
+                  Montague Gardens
+                  <br />
+                  Cape Town, South Africa
+                </a>
+              </div>
+
+              {/* Hours */}
+              <div>
+                <p className="mb-1 text-xs uppercase tracking-widest text-[#F2B90F]">
+                  Trading Hours
+                </p>
+
+                <p className="text-[#E0E1E6]/70">
+                  Monday – Sunday
+                  <br />
+                  24 Hours
+                </p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="border-t-1 border-[#e0e1e6]/10">
+        <div className="my-12 h-px bg-white/10" />
+
+        {/* Bottom Footer */}
+        <div className="flex flex-col gap-4 text-xs text-[#E0E1E6]/40 sm:flex-row sm:items-center sm:justify-between text-center">
           <p>
             © {currentDate} Roller Shutter Services (Pty) Ltd. All rights
             reserved.
           </p>
 
-          <p>
-            Professional roller shutter installations, repairs, servicing and
-            maintenance.
-          </p>
-          <p>
-            RSS · <i>"We keep you, rolling."</i>
+          <p className="italic">
+            Professional roller shutter solutions you can rely on.
           </p>
         </div>
       </div>

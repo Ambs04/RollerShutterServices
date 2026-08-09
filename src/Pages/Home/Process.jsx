@@ -23,7 +23,7 @@ export default function Process() {
   ];
 
   return (
-    <div class="bg-[#242424] py-20">
+    <div class="bg-[#161616] py-20 border-t border-[#2f2f2f]/40">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div class-="max-w-5xl ">
           <h2 class="text-[#e0e1e6] text-xl font-semibold mb-5">Our Process</h2>

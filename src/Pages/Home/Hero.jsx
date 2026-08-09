@@ -2,7 +2,12 @@ import hero from "../../assets/hero.png";
 
 export default function Hero() {
   return (
-    <div class=" min-h-screen relative overflow-hidden shadow-2xl ">
+    <div
+      class=" min-h-screen relative overflow-hidden shadow-2xl bg-gradient-to-r
+from-black/80
+via-black/60
+to-transparent"
+    >
       <img src={hero} class="absolute inset-0 w-full  h-full object-cover" />
       <div class="absolute h-full inset-0 bg-black/60">
         <div />
