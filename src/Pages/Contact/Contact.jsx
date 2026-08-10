@@ -103,9 +103,9 @@ export default function Contact() {
   };
 
   return (
-    <div id="contact">
+    <div id="contact" class="min-h-screen bg-[#353535]">
       <Header />
-      <div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-30">
         <div>
           <h3>GET IN TOUCH</h3>
 
@@ -118,7 +118,7 @@ export default function Contact() {
         </div>
 
         <div>
-          <div>
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-[1.5fr_0.75fr]">
             <div>
               <p>Send us a Message</p>
             </div>
