@@ -111,6 +111,12 @@ export default function Footer() {
                 >
                   (+27) 71 881 3320
                 </a>
+                <a
+                  href="tel:+27791836737"
+                  className="text-[#E0E1E6]/70 transition-colors hover:text-white"
+                >
+                  (+27) 79 183 6737
+                </a>
               </div>
 
               {/* Address */}
