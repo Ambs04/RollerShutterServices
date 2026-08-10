@@ -51,7 +51,7 @@ export default function Blinds() {
             quotation on professionally supplied and installed Luminos window
             shutters.
           </p>
-          <Link smooth to="/#contact">
+          <Link to="/contact">
             <button
               class=" mt-8
         rounded-xl
