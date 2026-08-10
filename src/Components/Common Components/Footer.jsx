@@ -105,18 +105,22 @@ export default function Footer() {
                   Phone
                 </p>
 
-                <a
-                  href="tel:+27718813320"
-                  className="text-[#E0E1E6]/70 transition-colors hover:text-white"
-                >
-                  (+27) 71 881 3320
-                </a>
-                <a
-                  href="tel:+27791836737"
-                  className="text-[#E0E1E6]/70 transition-colors hover:text-white"
-                >
-                  (+27) 79 183 6737
-                </a>
+                <p>
+                  <a
+                    href="tel:+27718813320"
+                    className="text-[#E0E1E6]/70 transition-colors hover:text-white"
+                  >
+                    (+27) 71 881 3320
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="tel:+27791836737"
+                    className="text-[#E0E1E6]/70 transition-colors hover:text-white"
+                  >
+                    (+27) 79 183 6737
+                  </a>
+                </p>
               </div>
 
               {/* Address */}
