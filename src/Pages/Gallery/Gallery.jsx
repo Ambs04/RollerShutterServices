@@ -105,32 +105,38 @@ export default function Gallery() {
   ];
 
   return (
-    <>
+    <div class="bg-[#353535] min-h-screen">
       <Header />
-      <div>
-        <div>
+      <div class="py-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mt-12 mb-16 text-center flex flex-col md:flex-row justify-center items-center gap-4">
           {filters.map((item) => (
             <button
               key={item}
               onClick={() => setFilter(item)}
               className={filter === item ? "active" : ""}
+              class={`rounded-xl px-4 py-3 font-semibold transition-all duration-300 ${
+                filter === item
+                  ? "bg-[#F22233] text-white shadow-lg shadow-[#F22233]/20"
+                  : "bg-[#F2B90F] text-[#0D0D0D] hover:bg-[#A68626] hover:text-white"
+              }`}
             >
               {item}
             </button>
           ))}
         </div>
 
-        <div>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-6">
           {filteredImages.map((image, index) => (
             <img
               key={index}
               src={image.src}
               alt={`${image.category} ${index + 1}`}
+              class="h-64 w-70 object-cover rounded-lg shadow-md"
             />
           ))}
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
