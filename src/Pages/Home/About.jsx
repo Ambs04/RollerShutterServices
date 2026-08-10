@@ -4,11 +4,11 @@ export default function About() {
   return (
     <div class=" py-15 overflow-hidden bg-[#353535]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
-        <div class="grid lg:grid-cols-2 lg:grid-cols-[1.3fr_1fr] items-center gap-16 justify-center">
+        <div class="grid lg:grid-cols-2 lg:grid-cols-[1.3fr_1fr] items-center gap-0 md:gap-16 justify-center">
           <div class="h-150 w-auto ">
             <img
               src={about}
-              class="sm:h-full md:h-full  sm:w-full object-contain md:rounded-lg rounded-lg    opacity-80"
+              class="sm:h-full md:h-full  sm:w-full object-contain  opacity-80"
             />
           </div>
           <div class="text-[#e0e1e6] text-sm sm:text-lg font-medium flex flex-col gap-4 tracking-wide max-w-3xl   ">
