@@ -22,17 +22,20 @@ export default function Blinds() {
           </video>
         </div>
         <div class="mt-16 max-w-4xl mx-auto ">
-          <h2 class="text-[#e0e1e6]/70 text-xl underline text-center font-semibold mb-6">
+          <h2
+            class="text-[#e0e1e6]/70 text-xl underline text-center font-semibold mb-6"
+            data-aos="fade-in"
+          >
             Professional Window Shutter Installation
           </h2>
-          <p class="text-[#e0e1e6]/50 text-lg  mb-6">
+          <p class="text-[#e0e1e6]/50 text-lg  mb-6" data-aos="fade-in">
             Enhance your home or business with premium Luminos window shutters,
             expertly supplied and installed by our experienced team. Combining
             timeless style with everyday practicality, these made-to-measure
             shutters are designed to complement any interior while providing
             exceptional light control, privacy, and lasting durability.
           </p>
-          <p class="text-[#e0e1e6]/50 text-lg  mb-6">
+          <p class="text-[#e0e1e6]/50 text-lg  mb-6" data-aos="fade-in">
             Whether you're renovating a single room or fitting out an entire
             property, we ensure every shutter is professionally measured and
             installed for a seamless finish. Available in a range of colours and
@@ -41,7 +44,10 @@ export default function Blinds() {
             test of time.
           </p>
         </div>
-        <div class="mx-auto mt-20 max-w-4xl rounded-3xl border border-white/10 bg-[#161616] px-6 py-14 text-center sm:px-12">
+        <div
+          class="mx-auto mt-20 max-w-4xl rounded-3xl border border-white/10 bg-[#161616] px-6 py-14 text-center sm:px-12"
+          data-aos="fade-left"
+        >
           <p class="text-2xl font-bold text-[#F2B90F] sm:text-3xl">
             Looking to Upgrade Your Windows?
           </p>
@@ -69,6 +75,7 @@ export default function Blinds() {
         
         hover:bg-[#590C13]
         hover:shadow-[#F22233]/30"
+              data-aos="fade-in"
             >
               UPGRADE YOUR WINDOWS
             </button>
