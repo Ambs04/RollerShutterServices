@@ -132,6 +132,7 @@ export default function Gallery() {
               src={image.src}
               alt={`${image.category} ${index + 1}`}
               class="h-64 w-70 object-cover rounded-lg shadow-md mx-auto"
+              data-aos="fade-down"
             />
           ))}
         </div>
