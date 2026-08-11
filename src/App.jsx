@@ -10,6 +10,7 @@ import ScrollToTop from "./Helper Functions/ScrollToTop";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import LoadingPage from "./Components/Common Components/LoadingPage";
 
 function App() {
   useEffect(() => {
@@ -24,6 +25,7 @@ function App() {
     <>
       <BrowserRouter>
         <ScrollToTop />
+        <LoadingPage />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
