@@ -9,13 +9,17 @@ export default function About() {
             <img
               src={about}
               class="sm:h-full md:h-full  sm:w-full object-contain  opacity-80"
+              data-aos="fade-in"
             />
           </div>
           <div class="text-[#e0e1e6] text-sm sm:text-lg font-medium flex flex-col gap-4 tracking-wide max-w-3xl   ">
-            <p class="font-semibold text-2xl md:text-left text-center text-[#f2b90f]">
+            <p
+              data-aos="fade-right"
+              class="font-semibold text-2xl md:text-left text-center text-[#f2b90f]"
+            >
               WHO ARE WE?
             </p>
-            <p>
+            <p data-aos="fade-right">
               Roller Shutter Services is a family-owned business founded in 2002
               in Cape Town, South Africa. Since its establishment, the company
               has built a strong reputation for delivering high-quality roller
@@ -23,7 +27,7 @@ export default function About() {
               installation, and servicing of roller shutters for residential,
               commercial, and industrial clients.
             </p>
-            <p>
+            <p data-aos="fade-right">
               Operating throughout Cape Town and the surrounding areas, RSS is
               committed to providing reliable products and exceptional customer
               service. With a strong focus on quality assurance, the company

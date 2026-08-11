@@ -5,16 +5,25 @@ export default function ServiceIntro() {
     <div class="bg-[#161616] py-25 ">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div class="mb-12 text-center">
-          <h2 class="text-[#e0e1e6] text-lg  sm:text-xl mb-4 font-semibold">
+          <h2
+            data-aos="fade-down"
+            class="text-[#e0e1e6] text-lg  sm:text-xl mb-4 font-semibold"
+          >
             WHAT WE OFFER
           </h2>
-          <p class="text-[#e0e1e6]/80 text-sm sm:text-lg font-normal tracking-wide">
+          <p
+            data-aos="fade-down"
+            class="text-[#e0e1e6]/80 text-sm sm:text-lg font-normal tracking-wide"
+          >
             Roller Shutter Services offers a wide range of services tailored to
             the customer's needs. Whether it be installing roller shutters or
             manufaturing them, we do it ALL.
           </p>
         </div>
-        <div class="mx-auto max-w-5xl flex flex-col sm:flex-row gap-4 justify-center items-center ">
+        <div
+          class="mx-auto max-w-5xl flex flex-col sm:flex-row gap-4 justify-center items-center "
+          data-aos="fade-in"
+        >
           <Link to="services">
             <button class="md:rounded-xl rounded-lg  bg-[#F22233] md:py-4 md:px-10  font-semibold hover:bg-[#dd0d1e] hover:text-[#e0e1e6] py-2 px-6">
               VIEW OUR SERVICES

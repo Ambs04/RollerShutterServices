@@ -16,7 +16,7 @@ export default function Home() {
         <ServiceIntro />
         <Process />
         <div class="bg-[#d7a40c] py-5 text-center text-[#e0e1e6] text-lg sm:text-xl font-semibold tracking-wide ">
-          <p>
+          <p data-aos="fade-right">
             Ready To Get <i>Rolling</i> ?{" "}
             <Link to="/contact" class="text-[#590C13]">
               CONTACT US
