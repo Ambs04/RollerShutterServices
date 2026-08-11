@@ -107,7 +107,7 @@ export default function Contact() {
       <Header />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-30">
         <div className="grid grid-cols-1 md:grid-cols-[0.7fr_1.3fr] gap-12">
-          <div class="md:mt-30">
+          <div class="md:mt-30" data-aos="fade-right">
             <h3 class="mb-3 text-[#e0e1e6] font-semibold text-xl">
               GET IN TOUCH
             </h3>
@@ -179,15 +179,19 @@ export default function Contact() {
           <div>
             <div>
               <div class="mt-6 mb-12 text-center text-[#f22233] font-bold underline text-lg ">
-                <p>SEND US A MESSAGE</p>
+                <p data-aos="fade-in">SEND US A MESSAGE</p>
               </div>
 
               {success && (
                 <div>Message sent successfully! We'll be in touch soon.</div>
               )}
 
-              <form onSubmit={handleSubmit} class="space-y-8">
-                <div class="flex flex-row md:flex-col gap-8 md:gap-8 justify-between">
+              <form
+                onSubmit={handleSubmit}
+                class="space-y-8 border-2 border-[#000000] px-8 py-6 rounded-xl bg-[#494a50] "
+                data-aos="fade-left"
+              >
+                <div class="flex flex-row md:flex-col gap-8 md:gap-8 justify-between ">
                   <div>
                     <label
                       htmlFor="firstName"
