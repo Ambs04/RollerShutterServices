@@ -125,13 +125,13 @@ export default function Gallery() {
           ))}
         </div>
 
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-6">
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-6 ">
           {filteredImages.map((image, index) => (
             <img
               key={index}
               src={image.src}
               alt={`${image.category} ${index + 1}`}
-              class="h-64 w-70 object-cover rounded-lg shadow-md"
+              class="h-64 w-70 object-cover rounded-lg shadow-md mx-auto"
             />
           ))}
         </div>
